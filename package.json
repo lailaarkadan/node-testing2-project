@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "server": "nodemon index.js",
+    "start": "node index.js",
+    "migrate": "knex migrate:latest",
+    "seed": "knex seed:run",
+    "rollback": "knex migrate:rollback",
+    "resetdb": "npm run rollback && npm run migrate && npm run seed"
   },
   "repository": {
     "type": "git",
@@ -21,7 +27,9 @@
     "@vscode/sqlite3": "^5.0.7",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
-    "knex": "^1.0.1"
+    "knex": "^1.0.1",
+    "migrations-file": "^0.2.1",
+    "pg": "^8.7.1"
   },
   "description": "## Instructions",
   "bugs": {
