@@ -1,5 +1,5 @@
 {
-  "name": "node-testing2-project",
+  "name": "testing2-project",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,5 +8,27 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bloominstituteoftechnology/node-testing2-project.git"
-  }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.7.0",
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "@vscode/sqlite3": "^5.0.7",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "knex": "^1.0.1"
+  },
+  "description": "## Instructions",
+  "bugs": {
+    "url": "https://github.com/bloominstituteoftechnology/node-testing2-project/issues"
+  },
+  "homepage": "https://github.com/bloominstituteoftechnology/node-testing2-project#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
